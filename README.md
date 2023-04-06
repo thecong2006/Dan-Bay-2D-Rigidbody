@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class spawn : MonoBehaviour
 {
-    public float speed;
-    [SerializeField] Rigidbody2D _myBody;
+    public float speed; //Tốc độ
+    [SerializeField] Rigidbody2D _myBody; //Biến Rigidbody
 
     private void Awake()
     {
-        _myBody = GetComponent<Rigidbody2D>();
+        _myBody = GetComponent<Rigidbody2D>(); //Làm rõ để lấy Rigidbody của gameOb
     }
     void FixedUpdate()
     {
